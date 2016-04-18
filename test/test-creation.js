@@ -10,7 +10,7 @@ describe('gulp-ng generator', function () {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('gulp-ng:app', [
+      this.app = helpers.createGenerator('gulp-ng-web:app', [
         '../../app'
       ]);
       done();
@@ -22,20 +22,18 @@ describe('gulp-ng generator', function () {
       // add files you expect to exist here.
       'app/app.css',
       'app/app.js',
-      'app/app_controller.js',
-      'app/app_controller_test.js',
       'app/index.html',
       'app/components/app_service.js',
       'app/components/app_service_test.js',
-      'app/main/main.html',
-      'app/main/main_controller.js',
-      'app/main/main_controller_test.js',
+      'app/main/user/users.html',
+      'app/main/user/users_controller.js',
+      'app/main/user/users_controller_test.js',
       '.bowerrc',
       'bower.json',
       'gulpfile.js',
       'package.json'
     ];
-    
+
     this.app.options['skip-install'] = true;
     this.app.run({}, function () {
       helpers.assertFile(expected);
