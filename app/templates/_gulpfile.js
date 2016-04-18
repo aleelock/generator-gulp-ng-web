@@ -34,11 +34,12 @@ gulp.task('vendorJS', function(){
     gulp.src([
             './bower_components/lodash/dist/lodash.js',
             './bower_components/jquery/dist/jquery.js',
+            './bower_components/moment/min/moment-with-locales.js',
             './bower_components/bootstrap/dist/js/bootstrap.js',
             './bower_components/angular/angular.js',
             './bower_components/angular-sanitize/angular-sanitize.js',
             './bower_components/angular-ui-router/release/angular-ui-router.js',
-            './bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
+            './bower_components/angular-bootstrap/ui-bootstrap-tpls.js'
         ])
         .pipe(plugins.concat('lib.js'))
         .pipe(gulp.dest(DIST));

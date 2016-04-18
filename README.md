@@ -59,6 +59,18 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
 
 -----
 
+#### Front-end components ####
+
+- lodash [https://lodash.com/](https://lodash.com/)
+- jquery [http://jquery.com/](http://jquery.com/)
+- bootstrap [http://v3.bootcss.com/](http://v3.bootcss.com/)
+- font-awesome [http://fortawesome.github.io/Font-Awesome/icons/](http://fortawesome.github.io/Font-Awesome/icons/)
+- angular-bootstrap [http://angular-ui.github.io/bootstrap/](http://angular-ui.github.io/bootstrap/)
+- angular-ui-router [https://github.com/angular-ui/ui-router](https://github.com/angular-ui/ui-router)
+- moment [http://momentjs.cn/](http://momentjs.cn/)
+
+-----
+
 #### USAGE ####
 
 1) npm install -g generator-gulp-ng-web

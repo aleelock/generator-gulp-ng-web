@@ -5,9 +5,11 @@
     <tr>
         <th>ID</th>
         <th>Name</th>
+        <th>CreatedAt</th>
     </tr>
     <tr ng-repeat="item in users">
         <td>{{item.id}}</td>
         <td>{{item.name}}</td>
+      <td>{{item.createdAt|timeFormat}}</td>
     </tr>
 </table>
