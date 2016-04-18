@@ -4,7 +4,7 @@ This is a yeoman generator for an AngularJS project that follows the [Best Pract
 
 Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
 
-使用[gulp-babel][9], 前端也可以用ES6了,超赞哦!
+使用了[gulp-babel][9], 前端也可以用[ES6][7]了,超赞哦!
 
 -----
 
@@ -46,6 +46,7 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
 - a static server is run at port 9000 with livereload support
 - when any html, js or css file in the build folder changes, they are autoreloaded on the browser
 - karma test runner will automatically run unit tests when relevant files change
+- using es6 in your js files
 
 -----
 
@@ -55,7 +56,6 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
 - bower [http://bower.io/][4]
 - gulp.js [http://gulpjs.com/][5]
 - karma-cli [http://karma-runner.github.io/][6]
-- es6 入门 [http://es6.ruanyifeng.com/][7]
 
 -----
 
