@@ -43,9 +43,10 @@ var GulpNgGenerator = yeoman.generators.Base.extend({
     this.mkdir('app/components');
     this.mkdir('app/components/filters');
     this.mkdir('app/components/directives');
-    this.mkdir('app/components/services');
     this.copy('app/components/filters/_time_format.js', 'app/components/filters/time_format.js');
     this.copy('app/components/filters/_time_format_test.js', 'app/components/filters/time_format_test.js');
+    this.mkdir('app/components/services');
+    this.copy('app/components/services/_base-http.js', 'app/components/services/base-http.js');
 
 
     this.mkdir('app/main');

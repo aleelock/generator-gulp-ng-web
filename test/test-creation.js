@@ -25,6 +25,7 @@ describe('gulp-ng generator', function () {
       'app/index.html',
       'app/components/filters/time_format.js',
       'app/components/filters/time_format_test.js',
+      'app/components/services/base-http.js',
       'app/main/user/users.html',
       'app/main/user/users_controller.js',
       'app/main/user/users_controller_test.js',
