@@ -1,13 +1,11 @@
 'use strict';
 
 angular.module('<%= _.slugify(appname) %>')
-    .controller('usersCtrl', ['$scope', function($scope){
+    .controller('usersCtrl', ['$scope','usersSvs', function($scope,usersSvs){
 
-        $scope.users = [{
-            id: 1, name: 'aleelock', createdAt: '2016-04-18T11:45:00.170Z'
-        },{
-            id: 2, name: 'john', createdAt: '2016-04-18T11:45:01.170Z'
-        }];
+        usersSvs.list().then(function(result){
+          $scope.users =  result;
+        });
 
     }])
 ;

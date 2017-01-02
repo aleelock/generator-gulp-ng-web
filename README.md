@@ -4,7 +4,10 @@ This is a yeoman generator for an AngularJS project that follows the [Best Pract
 
 Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
 
-使用了[gulp-babel][9], 前端也可以用[ES6][7]了,超赞哦!
+改进：
+
+* 使用了[gulp-babel][9], 前端也可以用[ES6]了,超赞哦!
+* 去掉bower以来，全面npm
 
 -----
 
@@ -12,8 +15,11 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
 
     app/
       components/
-        app_service.js
-        app_service_test.js
+        filters/
+           time_format.js
+        services/
+           base-http.js
+           users_services.js
       main/
         user/
           users.html
@@ -21,13 +27,10 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
           users_controller_test.js
       app.css
       app.js
-      index.html
-    bower_components/    
+      index.html  
     node_modules/
-    .bowerrc
     .gitignore
     README.md
-    bower.json
     gulpgile.js
     karma-unit.js
     package.json
@@ -89,7 +92,7 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
 
 #### Support ####
 For questions and issues: [https://github.com/aleelock/generator-gulp-ng-web/issues][8]
- 
+
   [1]: https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub
   [2]: http://nodejs.org/
   [3]: http://www.npmjs.org/

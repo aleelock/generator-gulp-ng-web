@@ -1,5 +1,5 @@
 // register the interceptor as a service
-angular.module('web')
+angular.module('<%= _.slugify(appname) %>')
 
     .factory('BaseHttp', ['$http', '$rootScope', '$timeout',
         function ($http, $rootScope, $timeout) {
@@ -46,4 +46,3 @@ angular.module('web')
                 }, 600);
             }
         }]);
-

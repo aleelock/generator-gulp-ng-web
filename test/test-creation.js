@@ -4,6 +4,7 @@ var path = require('path');
 var helpers = require('yeoman-generator').test;
 
 describe('gulp-ng generator', function () {
+  this.timeout(10000);
   beforeEach(function (done) {
     helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
       if (err) {
@@ -26,11 +27,10 @@ describe('gulp-ng generator', function () {
       'app/components/filters/time_format.js',
       'app/components/filters/time_format_test.js',
       'app/components/services/base-http.js',
+      'app/components/services/users_service.js',
       'app/main/user/users.html',
       'app/main/user/users_controller.js',
       'app/main/user/users_controller_test.js',
-      '.bowerrc',
-      'bower.json',
       'gulpfile.js',
       'package.json'
     ];
